@@ -1,0 +1,13 @@
+title: U.S. President Precinct-Level Returns 2016
+dataverse: medsl_president
+doi: doi:10.7910/DVN/LYWX3D
+inherits:
+- precinct-variables.yaml
+- precinct-coverage.yaml
+- precinct-release-notes.yaml
+r_alias: presidential_precincts_2016
+url: http://dx.doi.org/10.7910/DVN/LYWX3D
+office: the U.S. presidency
+level: precinct-level
+record_definition: Each record in the dataset gives the number of votes reported from a precinct for a candidate.
+

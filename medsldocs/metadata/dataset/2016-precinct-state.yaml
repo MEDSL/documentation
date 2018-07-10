@@ -1,0 +1,12 @@
+title: State Precinct-Level Returns 2016
+office: state office
+dataverse: medsl_state
+doi: doi:10.7910/DVN/GSZG1O
+url: http://dx.doi.org/10.7910/DVN/GSZG1O
+inherits:
+- precinct-variables.yaml
+- precinct-coverage.yaml
+- precinct-release-notes.yaml
+r_alias: state_precincts_2016
+level: precinct-level
+record_definition: Each record in the dataset gives the number of votes reported from a precinct for a candidate.

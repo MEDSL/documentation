@@ -1,0 +1,7 @@
+dataverse: medsl_house
+doi: doi:10.7910/DVN/IG0UN2
+inherits:
+- constituency.yaml
+r_alias: house_districts_1976_2016
+title: "U.S. House 1976-2016"
+url: https://dx.doi.org/10.7910/DVN/IG0UN2

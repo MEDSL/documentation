@@ -1,0 +1,10 @@
+dataverse: medsl_senate
+doi: doi:10.7910/DVN/PEJ5QU
+inherits:
+- constituency.yaml
+r_alias: senate_states_1976_2016
+title: "U.S. Senate 1976-2016"
+url: https://dx.doi.org/10.7910/DVN/PEJ5QU
+variable_notes:
+- name: district
+  note: Not applicable in U.S. Senate elections.

@@ -1,0 +1,45 @@
+variables:
+  - year
+  - stage
+  - special
+  - state
+  - state_postal
+  - state_fips
+  - state_icpsr
+  - county_name
+  - county_fips
+  - county_ansi
+  - county_lat
+  - county_long
+  - jurisdiction
+  - precinct
+  - office
+  - district
+  - candidate
+  - candidate_last
+  - candidate_first
+  - candidate_middle
+  - candidate_normalized
+  - candidate_full
+  - candidate_suffix
+  - candidate_nickname
+  - candidate_fec
+  - candidate_fec_name
+  - candidate_google
+  - candidate_govtrack
+  - candidate_icpsr
+  - candidate_maplight
+  - candidate_opensecrets
+  - candidate_wikidata
+  - candidate_party
+  - writein
+  - party
+  - mode
+  - votes
+
+variable_notes:
+  - name: party
+    note: Party names are standardized across jurisdictions.
+  - name: candidate
+    note: Candidate names are standardized across jurisdictions.
+

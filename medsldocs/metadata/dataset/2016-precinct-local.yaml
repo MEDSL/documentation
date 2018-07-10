@@ -1,0 +1,13 @@
+title: Local Precinct-Level Returns 2016
+dataverse: medsl_local
+doi: doi:10.7910/DVN/Q8OHRS
+inherits:
+- precinct-variables.yaml
+- precinct-coverage.yaml
+- precinct-release-notes.yaml
+r_alias: local_precincts_2016
+url: https://dx.doi.org/10.7910/DVN/Q8OHRS
+office: local office
+level: precinct-level
+record_definition: Each record in the dataset gives the number of votes reported from a precinct for a candidate.
+

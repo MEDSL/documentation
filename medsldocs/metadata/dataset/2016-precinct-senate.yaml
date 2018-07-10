@@ -1,0 +1,13 @@
+title: U.S. Senate Precinct-Level Returns 2016
+dataverse: medsl_senate
+doi: doi:10.7910/DVN/NLTQAD
+inherits:
+- precinct-variables.yaml
+- precinct-coverage.yaml
+- precinct-release-notes.yaml
+r_alias: senate_precincts_2016
+url: http://dx.doi.org/10.7910/DVN/NLTQAD
+office: the U.S. Senate
+level: precinct-level
+record_definition: Each record in the dataset gives the number of votes reported from a precinct for a candidate.
+

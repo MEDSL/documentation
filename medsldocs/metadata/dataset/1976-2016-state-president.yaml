@@ -1,0 +1,10 @@
+dataverse: medsl_president
+doi: doi:10.7910/DVN/42MVDX
+inherits:
+- constituency.yaml
+r_alias: presidential_states_1976_2016
+title: "U.S. President 1976-2016"
+url: https://dx.doi.org/10.7910/DVN/42MVDX
+variable_notes:
+- name: district
+  note: Not applicable in presidential elections.
