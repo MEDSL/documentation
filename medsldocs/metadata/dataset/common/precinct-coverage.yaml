@@ -42,11 +42,6 @@ coverage:
   California:
     included: true
     date_added: 2018-04-09
-    notes:
-      - >
-        Write-in votes are not yet included in the data. They're available only by
-        county from the [Secretary of State](http://www.sos.ca.gov/elections/prior-elections/statewide-election-results/general-election-november-8-2016/statement-vote).
-        (Our precinct-level returns are from the [Statewide Database](http://statewidedatabase.org/d10/g16.html).)
 
   Colorado:
     included: true
@@ -59,14 +54,11 @@ coverage:
   Delaware:
     included: true
     date_added: 2018-05-09
-    notes:
-      - The data don't yet include write-in votes.
 
   District of Columbia:
     included: true
     date_added: 2018-03-11
     notes:
-      - The data don't yet include write-in votes for president.
       - Returns for the Council and Advisory Referendum can be found in the
         `state` dataverse. Advisory Neighborhood Commission returns are in the
         `local` dataverse.
@@ -78,8 +70,6 @@ coverage:
   Georgia:
     included: true
     date_added: 2018-04-23
-    notes:
-      - The data don't yet include third-party or write-in votes for president.
 
   Hawaii:
     included: true
@@ -110,7 +100,6 @@ coverage:
     date_added: 2018-06-05
     notes:
       - Candidate names for lower office are not always consistent across counties.
-      - The data don't yet include write-in votes for president, with the exception of returns from La Porte and Marshall.
 
   Iowa:
     included: true
@@ -148,7 +137,6 @@ coverage:
     included: true
     date_added: 2018-04-09
     notes:
-      - The data don't yet include write-in votes for president.
       - >
         Note when aggregating over `precinct` the rows that represent "statistical
         adjustments."
@@ -157,7 +145,6 @@ coverage:
     included: true
     date_added: 2018-03-29
     notes:
-      - The data don't yet include write-in votes for president.
       - Democratic candidate `party` values are left as `Democratic-Farmer-Labor`.
 
   Mississippi:
@@ -178,14 +165,11 @@ coverage:
   Montana:
     included: true
     date_added: 2018-05-10
-    notes:
-      - The data don't yet include write-in votes for president.
 
   Nebraska:
     included: true
     date_added: 2018-04-23
     notes:
-      - The data don't yet include write-in votes.
       - There are no returns for local races.
       - Nebraska Legislature returns appear with an `office` value of `State Senate`.
 
@@ -225,14 +209,10 @@ coverage:
   North Dakota:
     included: true
     date_added: 2018-03-11
-    notes:
-      - The data don't yet include write-in votes for president.
 
   Ohio:
     included: true
     date_added: 2018-04-23
-    notes:
-      - The data don't yet include write-in votes for president.
 
   Oklahoma:
     included: true
@@ -253,8 +233,6 @@ coverage:
   Rhode Island:
     included: true
     date_added: 2018-03-29
-    notes:
-      - The data don't yet include write-in votes for president.
 
   South Carolina:
     included: true
@@ -278,8 +256,6 @@ coverage:
   Texas:
     included: true
     date_added: 2018-04-09
-    notes:
-      - The data don't yet include write-in votes for president.
       - There are no returns for local races.
 
   Utah:
@@ -289,24 +265,16 @@ coverage:
   Vermont:
     included: true
     date_added: 2018-04-09
-    notes:
-      - The data don't yet include write-in votes for president, except for the
-        ~18,000 cast for Bernie Sanders and reported at the precinct level.
 
   Virginia:
     included: true
     date_added: 2018-03-29
-    notes:
-      - The data don't yet include write-in votes for president.
 
   Washington:
     included: true
     date_added: 2018-04-09
     notes:
       - King County results appear for now as county aggregates.
-      - >
-        The data don't yet include about 108,000 write-in votes for president,
-        which are available at the county level.
 
   West Virginia:
     included: true
@@ -319,11 +287,8 @@ coverage:
     date_added: 2018-03-29
     notes:
       - Presidential returns are post-recount.
-      - The data don't yet include write-in votes for president.
 
   Wyoming:
     included: true
     date_added: 2018-03-11
-    notes:
-      - The data don't yet include write-in votes for president.
 

@@ -15,12 +15,7 @@ Returns by state are in the `source` directory. These are alternative partitions
 
 # Coverage
 
-| {{ "%-23s" | format('State') }} | {{ "%-10s" | format('Added') }} |
-| {{ "-" * 23 }} | {{ "-" * 10 }} |
-{% for k, v in dataset.coverage.items() -%}
-| {{ "%-23s" | format(k|trim) }} | {% if v.included is defined %}{{ "%-10s" | format(v.date_added) }}{% else %}{{ ' ' * 10 }}{% endif %} |
-{% endfor -%}
-{% for k, v in dataset.coverage.items() %}
+{%- for k, v in dataset.coverage.items() %}
 
 
 ## {{ k|trim }}
