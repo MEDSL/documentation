@@ -1,5 +1,9 @@
 release_notes:
-  
+
+  - date: 2018-08-02
+    note: >
+      Adds write-in votes requested from jurisdictions.
+
   - date: 2018-07-16
     note: >
       This release adds write-in votes in California, DC, Delaware, Georgia,

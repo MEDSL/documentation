@@ -8,6 +8,8 @@ pytest = "*"
 "jinja2" = "*"
 attr = "*"
 pyyaml = "*"
+pandas = "*"
+tableschema = "*"
 
 [dev-packages]
 

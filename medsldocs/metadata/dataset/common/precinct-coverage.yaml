@@ -256,7 +256,9 @@ coverage:
   Texas:
     included: true
     date_added: 2018-04-09
+    notes:
       - There are no returns for local races.
+      - Returns for uncontested races to the Texas House of Representatives do not appear in the data.
 
   Utah:
     included: true
