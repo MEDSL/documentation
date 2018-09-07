@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://www.github.com/MEDSL/documentation/schema/dataset.json",
+  "title": " Dataset Metadata", 
+  "type": "object",
+  "required": ["title", "url", "dataverse", "doi", "r_alias", "level", "record_definition", "variables"],
+  "properties": {
+    "title": {
+      "$id": "/properties/title",
+      "type": "string",
+      "title": "Title",
+      "examples": [
+        "U.S. President Precinct-Level Returns 2016"
+      ]
+    },
+    "url": {
+      "$id": "/properties/url",
+      "type": "string",
+      "format": "uri",
+      "title": "URL",
+      "examples": [
+        "http://dx.doi.org/10.7910/DVN/LYWX3D"
+      ]
+    },
+    "dataverse": {
+      "$id": "/properties/dataverse",
+      "type": "string",
+      "title": "Dataverse",
+      "enum": [
+        "medsl_president",
+        "medsl_house",
+        "medsl_state",
+        "medsl_local",
+        "medsl_senate"
+      ]
+    },
+    "doi": {
+      "$id": "/properties/doi",
+      "type": "string",
+      "title": "DOI",
+      "format": "uri",
+      "examples": [
+        "doi:10.7910/DVN/LYWX3D"
+      ]
+    },
+    "r_alias": {
+      "$id": "/properties/r_alias",
+      "type": "string",
+      "title": "R Alias",
+      "description": "An object name for the dataset in R",
+      "pattern": "^[^0-9][A-Za-z0-9_]*$",
+      "examples": [
+        "presidential_precincts_2016"
+      ]
+    },
+    "level": {
+      "$id": "/properties/level",
+      "type": "string",
+      "title": "Level of Aggregation",
+      "examples": [
+        "constituency-level",
+        "district-level",
+        "jurisdiction-level",
+        "national",
+        "precinct-level",
+        "state-level"
+      ]
+    },
+    "record_definition": {
+      "$id": "/properties/record_definition",
+      "type": "string",
+      "title": "Record Definition",
+      "examples": [
+        "Each record in the dataset gives the number of votes "
+      ]
+    },
+    "inherits": {
+      "$id": "/properties/inherits",
+      "type": "array",
+      "items": {
+        "$id": "/properties/inherits/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "examples": [
+          "precinct.yaml"
+        ],
+        "uniqueItems": true
+      }
+    },
+    "version": {
+      "$id": "/properties/version",
+      "type": "string",
+      "title": "Version",
+      "examples": [
+        "2018-07-07",
+        "v0.0.1"
+      ]
+    },
+    "release_notes": {
+      "$id": "/properties/release_notes",
+      "type": "array",
+      "items": { "$ref": "#/definitions/release_note" }
+    },
+    "variables": {
+      "type": "array",
+      "items": { "$ref": "https://www.github.com/MEDSL/documentation/schema/variable.json" },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "variable_notes": {
+      "$id": "/properties/variable_notes",
+      "type": "array",
+      "items": {
+        "$id": "/properties/variable_notes/items",
+        "type": "object",
+        "properties": {
+          "name": {
+            "$id": "/properties/variable_notes/items/properties/name",
+            "type": "string",
+            "title": "Variable Name"
+          },
+          "note": {
+            "$id": "/properties/variable_notes/items/properties/note",
+            "type": "",
+            "title": "Variable Note"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "note": {
+      "type": "object",
+      "required": [ "note", "date" ],
+      "properties": {
+        "referent": {
+          "type": {
+            "enum": [ "variable", "release" ]
+          }
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "examples": [
+            "2018-06-03"
+          ]
+        },
+        "note": {
+          "type": "string" ,
+          "examples": [
+            "This release adds returns from Alaska."
+          ]
+        }
+      }
+    }
+  }
+}

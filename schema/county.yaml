@@ -1,0 +1,32 @@
+name: medsl-fields-counties
+title: MEDSL Election Returns Fields: Counties
+author: MIT Election Data and Science Lab (https://electionlab.mit.edu)
+homepage: https://github.com/MEDSL/metadata
+fields:
+
+  - name: county_name
+    title: County Name
+    source: Census Bureau [National Counties Gazetteer File](https://www.census.gov/geo/maps-data/data/gazetteer2017.html).
+    type: string
+
+  - name: county_ansi
+    title: County ANSI Code
+    source: Census Bureau [National Counties Gazetteer File](https://www.census.gov/geo/maps-data/data/gazetteer2017.html).
+    type: number
+
+  - name: county_fips
+    title: County FIPS Code
+    description: Numeric FIPS 6-4 code, the concatenation of two-digit `state_fips` and three-digit county FIPS codes.
+    source: Census Bureau [National Counties Gazetteer File](https://www.census.gov/geo/maps-data/data/gazetteer2017.html).
+    type: number
+
+  - name: county_lat
+    description: County latitude (decimal degrees).
+    source: Census Bureau [National Counties Gazetteer File](https://www.census.gov/geo/maps-data/data/gazetteer2017.html).
+    type: number
+
+  - name: county_long
+    description: County longitude (decimal degrees).
+    source: Census Bureau [National Counties Gazetteer File](https://www.census.gov/geo/maps-data/data/gazetteer2017.html).
+    type: number
+
